@@ -1,0 +1,30 @@
+# Конфіг підготовки VEDAI -> YOLO-OBB (Ultralytics)
+raw:
+  images_dir: /content/raw/Vehicules1024        # папка з *_co.png / *_ir.png
+  annotations: /content/raw/Annotations1024     # папка або один файл annotation1024.txt
+  rgb_suffix: _co                               # беремо тільки RGB-канал
+
+out_dir: /content/datasets/vedai                 # локальний диск Colab (швидше за Drive)
+
+# id класу у VEDAI -> назва. Порядок рядків = індекс класу YOLO (0, 1, 2, ...).
+# ПЕРЕВІРТЕ id за readme/devkit: скрипт `inspect` покаже, які id реально є в даних.
+# Об'єкти з id, яких тут немає, відкидаються і потрапляють у звіт (dropped_unknown_class).
+classes:
+  1: car
+  11: pickup
+  9: van
+  2: truck
+  4: tractor
+  5: camping_car
+  23: boat
+  31: plane
+  10: other
+
+min_side_px: 2          # відкидаємо вироджені рамки (коротша сторона менша за це)
+centroid_tol_px: 3      # допуск перевірки "центр у файлі ~ центр чотирьох кутів"
+
+splits:
+  n_folds: 10
+  val_fraction: 0.15    # частка val від train-пулу, береться детерміновано
+  seed: 0               # seed РОЗБИТТЯ (не плутати з seed тренування)
+  official_folds_dir: null   # якщо є офіційні fold01.txt / fold01test.txt, вкажіть папку
