@@ -1,0 +1,9 @@
+{
+  "epochs": 50,
+  "freeze": null,
+  "trainable_params": 2650644,
+  "total_params": 2650644,
+  "seconds": 3712.7,
+  "best": "/content/drive/MyDrive/obb-aerial/runs/vedai/yolo26n/scratch/fold01_seed0/full/weights/best.pt",
+  "epochs_completed": 50
+}

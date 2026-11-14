@@ -1,0 +1,30 @@
+init: coco
+size: s
+seed: 0
+fold: 1
+dataset: vedai
+model_family: yolo26
+data_root: /content/datasets/vedai
+out_root: /content/drive/MyDrive/obb-aerial/runs
+tag: ''
+freeze: 11
+epochs:
+  stage1: 20
+  stage2: 30
+train:
+  imgsz: 1024
+  batch: 8
+  optimizer: AdamW
+  lr0: 0.001
+  warmup_bias_lr: 0.0
+  flipud: 0.5
+  close_mosaic: 5
+  workers: 2
+  patience: 100
+  plots: true
+stage_overrides:
+  stage2:
+    lr0: 0.0005
+eval_splits:
+- val
+- test

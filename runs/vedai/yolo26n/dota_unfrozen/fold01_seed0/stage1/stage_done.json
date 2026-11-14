@@ -1,0 +1,9 @@
+{
+  "epochs": 20,
+  "freeze": 11,
+  "trainable_params": 1285172,
+  "total_params": 2650644,
+  "seconds": 1480.9,
+  "best": "/content/drive/MyDrive/obb-aerial/runs/vedai/yolo26n/dota_unfrozen/fold01_seed0/stage1/weights/best.pt",
+  "epochs_completed": 20
+}
