@@ -1,0 +1,11 @@
+dataset,model,init,plane,small vehicle,large vehicle,ship
+vedai,yolo26n,coco,0.783,0.716,0.578,0.505
+vedai,yolo26n,dota_frozen,0.902,0.698,0.552,0.625
+vedai,yolo26n,dota_unfrozen,0.864,0.713,0.566,0.647
+vedai,yolo26n,scratch,0.546,0.502,0.201,0.085
+vedai,yolo26n,zeroshot,0.904,0.339,0.073,0.19
+vedai,yolo26s,coco,0.804,0.746,0.631,0.562
+vedai,yolo26s,dota_frozen,0.904,0.734,0.556,0.631
+vedai,yolo26s,dota_unfrozen,0.883,0.734,0.589,0.682
+vedai,yolo26s,scratch,0.464,0.598,0.3,0.226
+vedai,yolo26s,zeroshot,0.904,0.25,0.106,0.221
