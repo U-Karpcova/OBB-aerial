@@ -5,6 +5,6 @@ pillow
 pyyaml
 IPython
 tensorboard
-streamlit
+streamlit > 1.40
 ultralytics
 pandas

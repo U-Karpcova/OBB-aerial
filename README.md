@@ -195,7 +195,7 @@ pip install -r requirements.txt
 > `pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu`
 
 ```bash
-streamlit run app.py          # демо
+streamlit run app_old.py          # демо
 tensorboard --logdir runs     # криві навчання та метрики всіх прогонів
 ```
 
