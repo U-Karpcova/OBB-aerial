@@ -5,7 +5,7 @@
 [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/U-Karpcova/OBB-aerial/blob/main/src/notebooks/YOLO_OBB_VEDAI.ipynb)
 ![Ultralytics](https://img.shields.io/badge/Ultralytics-YOLO26--OBB-111F68)
 ![Task](https://img.shields.io/badge/task-oriented%20object%20detection-blue)
-![Demo](https://obb-aerial-68whzek7ch4naag3wghywc.streamlit.app/)
+[![Demo](https://img.shields.io/badge/demo-Streamlit-FF4B4B)](https://obb-aerial-68whzek7ch4naag3wghywc.streamlit.app/)
 
 На аерознімках техніка розвернута в довільний бік, тому звичайні прямокутні рамки захоплюють багато фону, а сусідні об'єкти перекриваються. Орієнтовані рамки (**OBB**, oriented bounding boxes) лягають на об'єкт щільніше й додатково дають кут повороту.
 
